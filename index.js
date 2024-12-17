@@ -44,7 +44,7 @@ app.listen(PORT, () => {
 setInterval(() => {
     console.log('Initiating ping to keep the server alive...'); // Log interval trigger
     try {
-      https.get('https://task-management-f7db.onrender.com', (res) => {
+      https.get('https://chat-application-qd00.onrender.com/chat', (res) => {
         console.log(`Ping successful: Status Code ${res.statusCode}`); // Log success status
       }).on('error', (error) => {
         console.error(`Error pinging server: ${error.message}`); // Log errors if any
